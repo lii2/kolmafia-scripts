@@ -1,0 +1,10 @@
+ashq if(my_mp() > 300 
+	&& have_effect($effect[Singer's Faithful Ocelot]) < 300
+	&& have_effect($effect[Leash of Linguini]) < 300){ 
+	use_skill(1, $skill[Singer's Faithful Ocelot]); 
+	use_skill(1, $skill[Leash of Linguini]); 
+	}
+	
+ashq if( my_mp() > mp_cost($skill[Summon Love Song]) ){
+	use_skill(1, $skill[Summon Love Song]); 
+}
